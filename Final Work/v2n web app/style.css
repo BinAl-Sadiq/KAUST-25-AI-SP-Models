@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	/*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+	font-family: cursive;
+}
+
+body{
+    width: 100vw !important;
+    height: 100vh !important;
+
+	background: linear-gradient(
+	to left,
+	#8eb4bd 0%,
+	#ffffff 100%
+	);
+}
+
+#main-container{
+    width: 80%;
+    max-width: 600px;
+    height: 50%;
+    max-height: 400px;
+
+    border-radius: 20px;
+
+    position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+#logo{
+	
+	position: fixed;
+	top:12%;
+	width: 100vw;
+
+	text-align: center;
+
+	background: linear-gradient(to right, #80a5af, #ba8c86);
+	-webkit-background-clip: text; /* for Chrome, Safari */
+	-webkit-text-fill-color: transparent; 
+	background-clip: text; /* for Firefox (recent versions) */
+
+	font-size: 22vh;
+}
+
+#url-container{
+	display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+	
+	width: 90%;
+}
+
+input[type="url"]{
+	transition: 0.15s;
+
+	width: 100%;
+
+	box-shadow:2px 2px 5px #000a;
+
+	outline: none;
+    border: none;
+	padding: 7px;
+	border-radius: 10px;
+}
+
+input[type="url"]:hover{
+    box-shadow:5px 5px 10px #000a;
+}
+
+input[type="url"]:focus{
+    box-shadow:5px 5px 10px rgb(0, 0, 0);
+}
+
+#url-container img{
+	position: relative;
+
+	margin-left: 10px;
+
+	height: 60%;
+	aspect-ratio: 1;
+
+	transition: 0.2s;
+
+	box-shadow: none;
+
+	cursor: pointer;
+}
+
+#url-container img:hover{
+    scale: 1.1;
+}
+
+#url-container img:active{
+    scale: 0.9;
+}
+
+#progress-bar-container{
+	display: none;
+
+	position: absolute;
+	width: 100vw !important;
+    height: 100vh !important;
+}
+
+#progress-bar-back{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+
+	width: 80%;
+    max-width: 600px;
+    height: 6%;
+    min-height: 30px;
+	max-height: 50px;
+
+    border-radius: 20px;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#progress-bar-front{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+
+	background: linear-gradient(
+	to left,
+	#8eb4bd 0%,
+	#ffffff 100%
+	);
+
+	box-shadow: 0px 0px 10px rgb(142, 180, 189);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: width 0.5s ease;
+}
+
+#progress-percentage{
+	font-size: 100%;
+	color: rgb(62, 62, 62);
+}
+
+#progress-details{
+	text-align: center;
+	font-size: 150%;
+	color: rgb(86, 86, 86);
+}

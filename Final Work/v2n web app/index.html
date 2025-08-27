@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v2n</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="logo">v2n</h1>
+
+    <div id="main-container">
+        <div id="url-container">
+            <input type="url" name="url" id="url-input" placeholder="Enter a URL" onkeydown="if(event.key === 'Enter'){ send_url(); return false; }"" autocomplete="off">
+            <img src="assets/file-upload.png" alt="" onclick="send_url()">
+        </div>
+
+        <div id="progress-bar-container">
+            <div id="progress-bar-back">
+                <div id="progress-bar-front">
+                    <h1 id="progress-percentage">33.33%</h1>
+                </div>
+                <h1 id="progress-details">
+                    downloading the video...
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
